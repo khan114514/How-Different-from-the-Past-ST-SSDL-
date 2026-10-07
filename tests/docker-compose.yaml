@@ -1,0 +1,12 @@
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: none
+    cap_drop: [ALL]
+    cap_add: [SETUID, SETGID, CHOWN]
+    security_opt:
+      - no-new-privileges=true
+      - seccomp=unconfined
+      - systempaths=unconfined

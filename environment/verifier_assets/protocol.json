@@ -1,0 +1,30 @@
+{
+  "version": "forecast-conditional-calibration-v1",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "prediction_shape": [
+    148,
+    12,
+    170
+  ],
+  "metric": "mae",
+  "direction": "minimize",
+  "baseline_mae": 15.421857156583444,
+  "estimated_attainable_mae": 14.948519443814908,
+  "shared_backbone_sha256": "71eeb60fa52b2ee141f8c860920857edd434f259d7b5016efaea24b298817b2d",
+  "shared_initialization": "one official backbone, sufficient declared training; never counted as independent neural seed fits",
+  "normalized_formula": "(baseline_mae - raw_mae)/(baseline_mae - estimated_attainable_mae)",
+  "score_clipped": false,
+  "upper_estimation_rule": "preregistered expert-only pilot estimate frozen before formal Reference evaluation",
+  "fit_cpu_seconds_per_seed": 180,
+  "fit_wall_seconds_per_seed": 180,
+  "reload_wall_seconds_per_seed": 60,
+  "source_max_bytes": 1572864,
+  "checkpoint_max_bytes": 67108864,
+  "dev_target_sha256": "a277315551017d66e01f22b2c7cc8055585ff8dc9184bf78527d957c49dcc1e9",
+  "solve_sha256": "d6e0c77a5c20b1afee86cdc5576402b45fea48f5623a0729b3c748d2ee5b4a4a",
+  "upper_estimation_source": "preregistered independent pilot estimate; detailed methods and measurements are expert-only"
+}

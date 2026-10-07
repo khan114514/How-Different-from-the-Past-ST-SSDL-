@@ -1,0 +1,25 @@
+{
+  "task_id": "auto2912",
+  "shared_pretrained_forecast_sha256": "71eeb60fa52b2ee141f8c860920857edd434f259d7b5016efaea24b298817b2d",
+  "train_origins": 74,
+  "dev_origins": 148,
+  "prediction_shape": [
+    148,
+    12,
+    170
+  ],
+  "feature_axes": {
+    "base": "sample,horizon,node",
+    "history": "sample,history_step,node",
+    "anchor": "sample,horizon,node",
+    "clock": "sample,horizon,node"
+  },
+  "data_sha256": {
+    "train_features.npz": "2de8db762fab6c688391a52252ff07d06d63075773aba7dfae8a2129b31e0082",
+    "train_targets.npz": "ebf32aa014a125461c872e924704be8f4f5da28fc33779bad96d4818ee99508c",
+    "dev_features.npz": "2296bd6147d5bbaa1484929506f1d9f26f84568d99ba463ac875897004040bec",
+    "graph.npz": "25ead8eabe96ca61d00e77d45bb86e958a65a5c6ef87dc9201cf4f6dd763364b"
+  },
+  "hidden_materials_included": false,
+  "reference_materials_included": false
+}

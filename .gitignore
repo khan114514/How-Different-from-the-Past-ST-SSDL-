@@ -1,0 +1,10 @@
+# Third-party runtime CLI binaries are provided by the execution environment
+# and are not vendored here (file size / upstream licensing).
+environment/cli/codex
+environment/cli/codex-code-mode-host
+environment/cli/rg
+
+# Python / OS caches
+__pycache__/
+*.pyc
+.DS_Store
